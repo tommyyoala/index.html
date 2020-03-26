@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MIDA</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(236, 236, 236);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(218, 54, 54);
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; 
+  background: #ccc;
+  padding: 50px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 25px;
+}
+
+article {
+  color: rgb(24, 24, 24);
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; 
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2 style="text-align: center;color: rgb(206, 47, 47);">MIDA Insights</h2>
+<p style="text-align:center;">Malaysia, strategically located in the heart of South East Asia, offers a cost-competitive location for investors intending to</p>
+<p style="text-align:center;">set up offshore operations for the manufacture of advanced technological products for regional and international markets.</p>
+
+<header>
+  <h2>Highlights</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Highlights</a></li>
+      <li><a href="#">Industry</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Our Journey in Malaysia</a></li>
+      <li><a href="#">Homegrown Heroes</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1 style="color: rgb(207, 47, 47);"> Awarded the Most Vibrant Investment Ecosystem in Asia at World Business Angels Investment Forum</h1>
+    <p>The WBAF 2020 event was held in Istanbul from 17-18 February 2020.</p>
+    <p>This annual event represents the largest gathering of representatives from early-stage equity and…</p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
